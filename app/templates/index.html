@@ -1,0 +1,91 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro %} {% block content %}
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+</head>
+
+<body>
+
+  <div class="allholder">
+
+    <div id="content">
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA6zslk7AtTps4ZU3viRnDlLaXCXTWwDNWWleBHRrNHFWYvKj6XQ&s" alt="" style="  width: 100%; height: 250px">
+      <blockquote class="blockquote blockquote-reverse" style="background-color: #eadddd;">
+        <p class="mb-0">Welcome to the global news website.</p>
+        <footer class="blockquote-footer">
+          <cite title="Source Title"></cite>
+        </footer>
+      </blockquote>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="general">NEWS</h1>
+        </div>
+
+
+
+        {{macro.displaySourceList(general)}}
+
+
+
+      </div>
+      <div class="container">
+        <div class="well">
+          <h1 id="business">business</h1>
+        </div>
+
+
+        {{macro.displaySourceList(business)}}
+
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id='technology'>technology</h1>
+        </div>
+
+        {{macro.displaySourceList(technology)}}
+
+
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="sports">sports</h1>
+        </div>
+
+        {{macro.displaySourceList(sports)}}
+
+      </div>
+
+      <div class="container">
+        <div class="well">
+          <h1 id="health">health</h1>
+        </div>
+
+        {{macro.displaySourceList(health)}}
+
+      </div>
+      <div class="container">
+        <div class="well">
+          <h1 id="science">science</h1>
+        </div>
+
+        {{macro.displaySourceList(science)}}
+
+      </div>
+      <div class="container">
+        <div class="well">
+          <h1 id="entertainment">entertainment</h1>
+        </div>
+        {{macro.displaySourceList(entertainment)}}
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+
+{% endblock%}
