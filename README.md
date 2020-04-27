@@ -28,7 +28,7 @@ $ source virtual/bin/activate
 $ python3.6 -m pip install -r requirements.txt (install all dependencies)
 $ ./start.sh
 
-##Known Bugs
+## Known Bugs
 No known bugs
 
 ## Technologies Used
